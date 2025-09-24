@@ -33,3 +33,23 @@ echo "</table>";
 ?>
 </body>
 </html>
+
+
+
+//No MYSQL 
+
+ CREATE TABLE alunos (
+    cod INT NOT NULL AUTO_INCREMENT,
+    aluno VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    celular VARCHAR(20),
+    PRIMARY KEY (cod)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+//Não funcionou tive que colocar 1 por 1.
+INSERT INTO alunos (aluno, email, celular) VALUES ('Debora Ester da Silva Correia', 'Deboraester26@email.com', '14996902341'),
+INSERT INTO alunos (aluno, email, celular) VALUES ('Larissa Alves de Souza', 'Larissaal27@email.com', '14998246349'),
+INSERT INTO alunos (aluno, email, celular) VALUES ('Ana Paula dos Santos', 'Anapaula45@email.com', '14979578497');
+
+
